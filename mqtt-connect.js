@@ -1,7 +1,7 @@
 var mqtt = require('mqtt')
 const Influx = require('influxdb-nodejs');
 
-var client  = mqtt.connect('tcp://10.16.64.14')
+var client  = mqtt.connect('tcp://iot.eclipse.org')
 const client_influx = new Influx('http://127.0.0.1:8086/mqttData');
 
 const fieldSchema = {
